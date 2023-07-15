@@ -9,7 +9,7 @@ Information Retrieval (IR) is a crucial component of many natural language proce
 This walkthrough helps you implement Generative Pseudo Labeling (GPL), an unsupervised domain adaptation technique for dense retrieval models on your domain data. For a collection of paragraphs from the desired domain, we utilize an existing pre-trained T5 encoder-decoder to generate suitable queries. These generated queries are used to mine negative passages. Finally, we use an existing cross-encoder to score each (query, passage)-pair and train a dense retrieval model on these generated, pseudo-labeled queries using MarginMSE-Loss.
 
 ### What is GPL?
-![Diagram](images/WhatIsGPL?.png) 
+![Diagram](images/WhatIsGPL.png) 
 Diagram 1: Source: pinecone.io/learn/gpl
 
 ### How does GPL compare to other fine-tuning methods?
